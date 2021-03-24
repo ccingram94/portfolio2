@@ -64,9 +64,14 @@ button {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 2rem;
+    font-size: 5vw;
   }
   h2, button {
-    font-size: 1rem;
+    font-size: 3vw;
+  }
+  #buttons {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
   }
 }
