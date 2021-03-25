@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { motion, AnimatePresence } from "framer-motion"
+
 
 export default function Home() {
   return (
@@ -14,8 +16,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <h1>Constance Ingram</h1>
-          <h2>web developer in Austin, Texas</h2>
+        <motion.div
+          animate={{ y: -100 }}>
+            <Link href="/">
+            <h1>Constance Ingram</h1>
+            </Link>
+          <h2>Austin, Texas</h2>
+          <hr></hr>
+          </motion.div>
           <div id="buttons">
             <Link href="/resume">
             <button>Resume</button>
