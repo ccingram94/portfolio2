@@ -1,9 +1,8 @@
 import '../styles/globals.css'
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AnimateSharedLayout>
       <motion.div
         initial={{ opacity : 0 }}
         animate={{ opacity: 1 }} 
@@ -12,8 +11,6 @@ function MyApp({ Component, pageProps }) {
       >
         <Component {...pageProps} />
       </motion.div>
-    </AnimateSharedLayout>
-
     )
 }
 

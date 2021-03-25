@@ -83,7 +83,7 @@ hr {
 }
 
 #headers {
-  margin-top: 20px;
+  margin-top: 10vh;
 }
 
 * {
@@ -93,17 +93,40 @@ hr {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 5vw;
+    font-size: 1.5rem;
   }
   h2, button, p {
-    font-size: 3vw;
+    font-size: 0.8rem;
   }
   #buttons {
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
   }
+  #overlay {
+    position: fixed;
+    top: auto;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  #headers {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+  }
+  main {
+    padding-top: 0px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-height: 800px) {
+  main {
+    margin-top: 10vh;
+  }
+  #overlay {
+    position: fixed;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
 }

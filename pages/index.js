@@ -10,9 +10,7 @@ export default function Home() {
         <title>Constance Ingram</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div id="overlay"><div> 
-
+      <div id="overlay"></div>
       <motion.main 
       className={styles.main}
       initial={{ opacity: 0}}
@@ -35,8 +33,6 @@ export default function Home() {
             </div>
           </div>
       </motion.main>
-      </div>
-      </div>
       </div>
   )
 }

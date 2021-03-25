@@ -31,7 +31,6 @@ export default function Home() {
           <h2>Experience</h2>
           <p>Intellectual Property Analyst</p>
           <p><i>Accenture @ Facebook (2019 - current)</i></p>
-          
           <br></br>
           <p>Novelist and Freelance Writer</p>
           <p><i>Sterling Content LLC (2013 - 2019)</i></p>
